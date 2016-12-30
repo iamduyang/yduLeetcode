@@ -18,7 +18,6 @@ public class Solution {
         for(int returnNum:hh1)
             returnNumAction =returnNum;
             
-        
         return returnNumAction;
     }
 }
