@@ -4,7 +4,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        if n==0:
-        	return 0
+        if n<2:
+        	return n
         else:
         	return n%2+self.hammingWeight(n/2) 
