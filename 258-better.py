@@ -2,10 +2,12 @@ class Solution(object):
 	def addDigits(self, num):
  
 		while num >9:
-			numStr = str(num)
-			num = 0
-			for ii in range(0,len(numStr)):
-				num = num+int(numStr[ii])
+			numOut = 0
+			while num>9:
+				numOut =numOut+ num%10
+				num =num/10
+			num = numOut+num
+			 
 
 		return num
 			
